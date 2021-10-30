@@ -10,4 +10,6 @@ app.innerHTML = `
 document.querySelector('[data-js="link"]').addEventListener("click", (e) => {
   e.preventDefault();
   app.classList.toggle("hide");
+  e.target.textContent =
+    e.target.textContent === "Esconder" ? "Exibir" : "Esconder";
 });
